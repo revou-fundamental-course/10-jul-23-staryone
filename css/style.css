@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  height: 20vh;
+}
+
+main {
+  height: 80vh;
+}
+
+footer {
+  height: 10vh;
+  text-align: center;
+}
