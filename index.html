@@ -16,16 +16,34 @@
   </header>
 
   <main>
-    <section>
-
+    <section class="container-form">
+      <form action="">
+        <label for="weight">Berat Badan (kg)</label><br>
+        <input type="number" id="weight" name="weight" required><br>
+        <label for="height">Tinggi Badan (cm)</label><br>
+        <input type="number" id="height" name="height" required><br>
+        <label for="age">Umur (tahun)</label><br>
+        <input type="number" id="age" name="age" required><br>
+        <label for="gender">Gender</label><br>
+        <input type="radio" id="man" name="gender" required><label for="man"> Pria</label>
+        <input type="radio" id="woman" name="gender" required><label for="woamn">Wanita</label>
+      </form>
     </section>
 
-    <section>
-
+    <section class="container-feature">
+      <h2>Keunggulan Fitur</h2>
+      <ol>
+        <li>Menghitung berat badan kalian</li>
+        <li>Menentukan kategori berat badan ideal</li>
+        <li>Mempersiapkan langkah terbaik mencapai berat badan ideal</li>
+      </ol>
     </section>
 
-    <section>
-      
+    <section class="container-result">
+      <h2>Hasil Perhitungan</h2>
+      <div id="resultDisplay">
+        
+      </div>
     </section>
   </main>
 
