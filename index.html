@@ -16,21 +16,27 @@
   </header>
 
   <main>
-    <section class="container-form">
-      <form action="">
+    <section class="form card">
+      <form id="bmiForm">
         <label for="weight">Berat Badan (kg)</label><br>
         <input type="number" id="weight" name="weight" required><br>
+
         <label for="height">Tinggi Badan (cm)</label><br>
         <input type="number" id="height" name="height" required><br>
+
         <label for="age">Umur (tahun)</label><br>
         <input type="number" id="age" name="age" required><br>
+
         <label for="gender">Gender</label><br>
-        <input type="radio" id="man" name="gender" required><label for="man"> Pria</label>
-        <input type="radio" id="woman" name="gender" required><label for="woamn">Wanita</label>
+          <input type="radio" id="gender" name="gender" value="man" required><label for="man"> Pria</label>
+          <input type="radio" id="gender" name="gender" value="woman" required><label for="woamn">Wanita</label><br>
+        
+        <button type="submit">Hitung BMI</button>
+        <button type="submit">Hapus Hasil</button>
       </form>
     </section>
 
-    <section class="container-feature">
+    <section class="feature card">
       <h2>Keunggulan Fitur</h2>
       <ol>
         <li>Menghitung berat badan kalian</li>
@@ -39,16 +45,28 @@
       </ol>
     </section>
 
-    <section class="container-result">
+    <section class="result card">
       <h2>Hasil Perhitungan</h2>
       <div id="resultDisplay">
-        
       </div>
+    </section>
+
+    <section class="explanation card">
+      <h2>Kategori BMI</h2>
+      <p>Indeks Massa Tubuh (IMT) Anda masuk ke dalam salah satu kategori berikut:</p>
+      <ul>
+        <li><strong>Kurus:</strong> BMI kurang dari 18.5</li>
+        <li><strong>Normal:</strong> BMI antara 18.5 - 24.9</li>
+        <li><strong>Gemuk:</strong> BMI antara 25 - 29.9</li>
+        <li><strong>Obesitas:</strong> BMI 30 atau lebih</li>
+      </ul>
     </section>
   </main>
 
   <footer>
         <p>&#169 Copyright 2023. All Rights Reserved. By StaryOne</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
