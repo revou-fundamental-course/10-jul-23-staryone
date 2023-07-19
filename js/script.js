@@ -16,6 +16,16 @@ document.getElementById('bmiForm').addEventListener('submit', (e) => {
   }
 });
 
+document.getElementById('bmiForm').addEventListener('reset', (e) => {
+  e.preventDefault();
+
+  const resultDisplay = document.getElementById('resultDisplay');
+  resultDisplay.innerHTML = ``;
+
+});
+
+
+
 const calculateBMI = (height, weight) => {
   const heightInMeters = height / 100;
   return weight / (heightInMeters * heightInMeters);
@@ -37,13 +47,22 @@ const getBMICategory = (bmi, gender) => {
 
 const getSummaryCategory = (category) => {
   if(category === 'Kurus'){
-    return '';
+    return `
+    Jika BMI Anda kurang dari 18.5, 
+    konsultasikan dengan dokter atau ahli gizi. 
+    Tingkatkan asupan kalori dengan makanan bergizi dan 
+    lakukan latihan fisik teratur.
+    `;
   } else if(category === 'Normal'){
-    return '';
+    return 'Pertahankan pola makan seimbang dan lakukan latihan fisik teratur.';
   } else if(category === 'Gemuk'){
-    return '';
+    return `Kurangi makanan tinggi lemak, gula, dan garam. 
+    Fokus pada makanan sehat dengan serat tinggi dan tingkatkan aktivitas fisik.`;
   } else {
-    return '';
+    return `Konsultasikan dengan dokter atau ahli gizi. 
+    Rencanakan program penurunan berat badan yang sehat dengan 
+    perbaikan pola makan dan 
+    peningkatan aktivitas fisik secara bertahap.`;
   }
 };
 
